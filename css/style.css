@@ -1,0 +1,99 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-gray);
+}
+
+.container{
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    font-weight: 200;
+}
+
+header h2{
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+header p{
+    width: 50%;
+    margin: auto;
+}
+
+#article-container{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+#article-container article{
+    background-color: #FFF;
+    padding: 2rem;
+    height: 250px;
+    position: relative;
+}
+
+#article-container article h3{
+    font-weight: 600;
+}
+
+#article-container article img{
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+}
+
+#article-container .supervisor{ 
+    border-top: 5px solid var(--cyan);
+    grid-row: 2 / span 2;
+    margin-top: -8rem;
+}
+
+#article-container .team{
+    border-top: 5px solid var(--red);
+    grid-column: 2 / span 1;
+}
+
+#article-container .karma{ 
+    border-top: 5px solid var(--orange);
+    grid-row: 2 / span 1;
+}
+
+#article-container .calculator{ 
+    border-top: 5px solid var(--blue);
+    grid-row: 2 / span 2;
+    margin-top: -7rem;
+}
+
+/*  Footer */
+footer .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
